@@ -11,36 +11,36 @@ Members: Wenting Ge, Lenny Jin, Yuanyi Liang, Jiaying Lu, Johnson Wu, Yilun Yao
 ## Strategy workflow
 
 1. Read and process data
-  * Pre-process and generate Min bar Data
-  * Pre-process and generate Tick Data
-  * Filter Tick Data to remove data with an abnormal price change
+	* Pre-process and generate Min bar Data
+	* Pre-process and generate Tick Data
+	* Filter Tick Data to remove data with an abnormal price change
 2. Get the static trading curve using 2 methods
-  * Method 1: by regression
-  * Method 2: by binwise median
+	* Method 1: by regression
+	* Method 2: by binwise median
 3. Trading signals functions
-  * VCV measure
-    * logistic regression
-  * VPIN measure
-    * threshold
-  * Hidden Liquidity
-    * optimization
+	* VCV measure
+		* logistic regression
+	* VPIN measure
+		* threshold
+	* Hidden Liquidity
+		* optimization
 4. Calibrate delta parameter in generating adaptive trading curve
-  * Grid search
+	* Grid search
 5. Generate dynamic trading curve
-  * Update dynamic trading curve based on signals
+	* Update dynamic trading curve based on signals
 6. Backtest on Min bar data
-  * Generate trades for result analysis
+	* Generate trades for result analysis
 7. Train and calibrate parameters in execution model
-  * Exponential fit
+	* Exponential fit
 8. Test on tick data
-  * Compare VWAP and order completion price
+	* Compare VWAP and order completion price
 10. Transaction cost analysis
-  * Compare VWAP, order completion price and other measures
-  * Compare performance of different signals
+	* Compare VWAP, order completion price and other measures
+	* Compare performance of different signals
 11. Visualization
-  * Scatter plot
-  * Box chart
-  * Bubble chart
+	* Scatter plot
+	* Box chart
+	* Bubble chart
   
 <br>
 
